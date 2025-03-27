@@ -759,7 +759,7 @@ system.time({
 
 sim2_test <- SIM1_ftk(N_sim = 1000,n_pts,N_sites = 100,N_cov,Test_set_nr_pts,predtimes = predtimes ) 
 
-saveRDS(sim5_test,"C:/Users/rasmu/OneDrive/Skrivebord/R ting/Simulationer - zip/Simulationer - zip/Simulation 1/sim1_test.rds")
+saveRDS(sim5_test,"/Simulationer - zip/Simulation 1/sim1_test.rds")
 saveRDS(sim5_test,file = "./Simulation 5/sim5_test_new.rds")
 
 ####################
