@@ -267,5 +267,5 @@ system.time({
 })
 saveRDS(sim2_test,file = "./Simulation 2/NewSimulations/sim2_test_results.rds")
 saveRDS(sim2_test,file = "./Simulation 2/NewSimulations/sim2_test_results_weightedBZ.rds")
-saveRDS(sim2_test,"C:/Users/rasmu/OneDrive/Skrivebord/R ting/Simulationer - zip/Simulationer - zip/Simulation 2/sim2_test_new.rds")
+saveRDS(sim2_test,"./Simulation 2/sim2_test_new.rds")
 saveRDS(sim2_test,file = "./Simulation 2/sim2_test_new.rds")

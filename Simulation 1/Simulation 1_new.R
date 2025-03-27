@@ -636,33 +636,33 @@ p2
 p22
 
 
-png(filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/haz_thesis_Smooth_B_25.png",
+png(filename = "./Results/Figures/haz_thesis_Smooth_B_25.png",
     width =width,
     height =height ,
     res = res)
 p1
 dev.off()
-png(filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/haz_thesis_Smooth_B_10.png",
+png(filename = "/Results/Figures/haz_thesis_Smooth_B_10.png",
     width =width,
     height =height ,
     res = res)
 p11
 dev.off()
 
-png(filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/CUM_haz_thesis_Smooth_B_25.png",
+png(filename = "./Results/Figures/CUM_haz_thesis_Smooth_B_25.png",
     width =width,
     height =height ,
     res = res)
 p2
 dev.off()
-png(filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/CUM_haz_thesis_Smooth_B_10.png",
+png(filename = "./Results/Figures/CUM_haz_thesis_Smooth_B_10.png",
     width =width,
     height =height ,
     res = res)
 p22
 dev.off()
 
-png(filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/CombinedHAZZARDS_Smooth_B.png",
+png(filename = "./Results/Figures/CombinedHAZZARDS_Smooth_B.png",
     width =width,
     height =height ,
     res = res)

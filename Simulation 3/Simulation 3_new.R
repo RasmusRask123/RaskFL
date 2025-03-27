@@ -266,7 +266,7 @@ system.time({
   
 })
 saveRDS(sim3_test,"./Simulation 3/NewSimulations/sim3_test_new_weightsBZ.rds")
-saveRDS(sim3_test,"C:/Users/rasmu/OneDrive/Skrivebord/R ting/Simulationer - zip/Simulationer - zip/Simulation 3/sim3_test.rds")
+saveRDS(sim3_test,"./Simulationer - zip/Simulation 3/sim3_test.rds")
 saveRDS(sim3_test,"./Simulation 3/sim3_test_new.rds")
 saveRDS(sim3_test,"./Simulation 3/NewSimulations/sim3_test_new.rds")
 

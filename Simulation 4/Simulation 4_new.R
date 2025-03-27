@@ -285,7 +285,7 @@ system.time({
 })
 saveRDS(sim4_test,"./Simulation 4/NewSimulations/sim4_test_new_weightBZ.rds")
 saveRDS(sim4_test,"./Simulation 4/NewSimulations/sim4_test_new.rds")
-saveRDS(sim4_test,"C:/Users/rasmu/OneDrive/Skrivebord/R ting/Simulationer - zip/Simulationer - zip/Simulation 4/sim4_test.rds")
+saveRDS(sim4_test,"./Simulationer - zip/Simulation 4/sim4_test.rds")
 saveRDS(sim4_test,file = "./Simulation 4/sim4_test_new.rds")
 
 

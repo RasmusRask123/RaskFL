@@ -356,7 +356,7 @@ ABS_Avg_s4$data %>% group_by(Models) %>% summarise(med=median(value) )
 ### Saving Plots ###
 ####################------------------------------------------------------------
 png(
-  filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/C_index_results.png",
+  filename = "./Results/Figures/C_index_results.png",
   width = width,
   height = height,
   res = res
@@ -365,7 +365,7 @@ C_index_plot
 dev.off()
 
 png(
-  filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/IBS_results.png",
+  filename = "./Results/Figures/IBS_results.png",
   width = width,
   height = height,
   res = res
@@ -374,7 +374,7 @@ IBS_plot
 dev.off()
 
 png(
-  filename = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Figures/ABS_AVG_results.png",
+  filename = "./Results/Figures/ABS_AVG_results.png",
   width = width,
   height = height,
   res = res
@@ -452,7 +452,7 @@ vars <- c("C_index_TRUE","C_index_Pool_pois","C_index_FL_COX","C_index_Pool_COX"
 tab1 <- CreateTableOne(vars = vars,data = df_combined,strata = "Simulation")
 tab1 <- print(tab1,minMax = T,nonnormal = vars,contDigits = 4,test = F)%>% as.data.frame()
 
-write.csv(x = tab1,file = "Q:/AalbUH-Haema-AnnonymisationOfPredictiveModels/Results/Tables/C_diff.csv",row.names = T)
+write.csv(x = tab1,file = "./Results/Tables/C_diff.csv",row.names = T)
 
 
 
