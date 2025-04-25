@@ -184,8 +184,10 @@ cox_update <- function(df,beta_old,times = "eventtime",event = "status"){
     #Hessian
     #Iteratively adding the hessians canculated at every unique eventtime
     H_old <- H_old+Hessian_fkt(X_riskSet = grad_list$X_riskSet,t2 =grad_list$t2 ,EXP_XB =grad_list$EXP_XB ,n_cov =length(beta_old),d_i = grad_list$d_i )
+   
   }
-  
+  # We have to add a minus to the hessian per definition
+  H_old <- -H_old
   return(list(Gradient=Grad_old,Hessian=H_old))
 }
 
@@ -360,7 +362,10 @@ Beta_Cox_FL_fkt <- function(Sim_data,beta_old,Computation=F){
     Hessian <- grad_exstract$Hessian
     
     #Negative inverse hessian for the update
-    H_inv <- solve(-Hessian)# The negative sign is correct, we forgot to take the negative when making the hessian. 
+    # The negative sign is correct, we forgot to take the negative when making the hessian. 
+    #H_inv <- solve(-Hessian)
+    #Note: the negative sign have been corrected in the previous functions
+    H_inv <- solve(Hessian)
     
     #Updating Beta
     beta_new <-  beta_old-H_inv%*%GRADIENT
